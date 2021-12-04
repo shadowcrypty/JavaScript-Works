@@ -1,15 +1,16 @@
 {
   "name": "koawebserver",
   "version": "1.0.0",
-  "description": "",
+  "description": "Öncelikle şunu belirteyim. Koa.js hakkında konuşmadığımızı biliyorum ve bu ödev ilk aşamada bizi zorlayacak. Buradaki amacım yeni bir teknolojiye başlama cesareti oluşturmak ve hata yapma özgürlüğümüz olduğunu göstermek.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "ziya namli",
   "license": "ISC",
   "dependencies": {
     "koa": "^2.13.4",
     "koa-route": "^3.2.0"
-  }
+  },
+  "devDependencies": {}
 }
