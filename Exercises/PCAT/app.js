@@ -1,14 +1,18 @@
 const express = require('express');
-
+const path = require('path');
 const app = express();
 
+const myLogger = (req, res, next) => {
+  console.log('middleware');
+  next();
+};
+
+//middlewares
+app.use(express.static('public'));
+app.use(myLogger);
+
 app.get('/', (req, res) => {
-  const photo = {
-    id: 1,
-    name: 'Photo name',
-    description: 'photo description',
-  };
-  res.send(photo);
+  res.sendFile(path.resolve(__dirname, 'temp/index.html'));
 });
 
 const port = 3000;
