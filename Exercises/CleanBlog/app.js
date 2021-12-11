@@ -21,7 +21,7 @@ app.get("/about", (req, res) => {
 app.get("/add_post", (req, res) => {
   res.render("add_post");
 });
-
+//listening port
 app.listen(3000, () => {
   console.log("its working now");
 });
